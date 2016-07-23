@@ -65,5 +65,5 @@ class tacker::db::mysql(
     allowed_hosts => $allowed_hosts,
   }
 
-  ::Openstacklib::Db::Mysql['tacker'] ~> Exec<| title == 'tacker-db-manage db_sync' |>
+  ::Openstacklib::Db::Mysql['tacker'] ~> Exec<| title == 'tacker-db-sync' |>
 }

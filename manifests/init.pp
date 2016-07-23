@@ -330,7 +330,7 @@ class tacker(
   }
 
   Tacker_config<||> ~> Service[$service_name]
-  Tacker_config<||> ~> Exec<| title == 'tacker-db-manage db_sync'|>
+  Tacker_config<||> ~> Exec<| title == 'tacker-db-sync'|>
 
   include ::tacker::db
   include ::tacker::params
