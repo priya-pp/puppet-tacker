@@ -2,7 +2,7 @@
 # Class to execute "tacker-manage db_sync
 #
 class tacker::db::sync(
-  $extra_params = '--config-file /etc/neutron/tacker.conf',
+  $extra_params = '--config-file /etc/tacker/tacker.conf',
 ){
 
 
