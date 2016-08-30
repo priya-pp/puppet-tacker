@@ -50,6 +50,6 @@ class tacker::db::postgresql(
     privileges    => $privileges,
   }
 
-  ::Openstacklib::Db::Postgresql['tacker'] ~> Exec<| title == 'tacker-manage db_sync' |>
+  ::Openstacklib::Db::Postgresql['tacker'] ~> Exec<| title == 'tacker-db-manage db_sync' |>
 
 }
