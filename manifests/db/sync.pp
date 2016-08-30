@@ -2,7 +2,7 @@
 # Class to execute "tacker-manage db_sync
 #
 class tacker::db::sync {
-  exec { 'tacker-manage db_sync':
+  exec { 'tacker-db-manage db_sync':
     path        => '/usr/bin',
     user        => 'tacker',
     refreshonly => true,
