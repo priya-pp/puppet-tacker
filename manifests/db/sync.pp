@@ -10,5 +10,5 @@ class tacker::db::sync {
     require     => User['tacker'],
   }
 
-  Exec['tacker-manage db_sync'] ~> Service<| title == 'tacker' |>
+  Exec['tacker-db-manage db_sync'] ~> Service<| title == 'tacker' |>
 }
